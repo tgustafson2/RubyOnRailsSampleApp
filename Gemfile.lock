@@ -89,6 +89,8 @@ GEM
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     builder (3.2.4)
     capybara (3.39.2)
       addressable
@@ -111,6 +113,8 @@ GEM
       ruby2_keywords
     erubi (1.12.0)
     execjs (2.9.1)
+    faker (3.2.2)
+      i18n (>= 1.8.11, < 2)
     ffi (1.16.3)
     ffi (1.16.3-x64-mingw-ucrt)
     formatador (1.1.0)
@@ -145,10 +149,10 @@ GEM
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.21.4)
+    loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
-    lumberjack (1.2.9)
+    lumberjack (1.2.10)
     mail (2.8.1)
       mini_mime (>= 0.1.1)
       net-imap
@@ -167,7 +171,7 @@ GEM
     msgpack (1.7.2)
     mutex_m (0.2.0)
     nenv (0.3.0)
-    net-imap (0.4.4)
+    net-imap (0.4.5)
       date
       net-protocol
     net-pop (0.1.2)
@@ -298,6 +302,7 @@ GEM
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.6.12)
@@ -310,8 +315,10 @@ DEPENDENCIES
   bcrypt
   bootsnap
   bootstrap-sass
+  bootstrap-will_paginate
   capybara
   debug
+  faker
   guard (= 2.18.0)
   guard-minitest (= 2.4.6)
   importmap-rails
@@ -331,6 +338,7 @@ DEPENDENCIES
   tzinfo-data
   web-console
   webdrivers (= 5.0.0)
+  will_paginate (= 3.3.1)
 
 RUBY VERSION
    ruby 3.2.2p53
